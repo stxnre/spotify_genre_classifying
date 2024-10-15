@@ -13,3 +13,9 @@ For every track, the first 9 features contain information about the song, artist
 ### Data Analysis
 
 Before training a classifier, I wanted to look at separability between genres in the training dataset. In `genre_projection.py`, I perform two rank-2 projections of the training data and plot a color-coded map of the projections. The first projection is a standard PCA projection, projecting onto the first two principal components. The second projection uses t-distributed Stochastic Neighbor Embeddings (or t-SNE).
+
+### Training and Classifying
+
+`genre_classifying.py` contains the code that trains and tests genre classifier models, using more "traditional" methods. The methods include a Decision tree, Random forests, and AdaBoost. 
+
+`neural_net_classifier.py`, as the name suggests, trains and tests a neural network genre classifier. Written with PyTorch, This simple neural network has three hidden layers and uses the rectified linear unit (ReLU) for nonlinear activation. The network is trained over 100 epochs with a batch size of 10, working to minimize cross-entropy loss.
