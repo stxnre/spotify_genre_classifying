@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Load Data
-data = pd.read_csv("hw6/archive/spotify_songs.csv")
+data = pd.read_csv("data/spotify_songs.csv")
 data.drop(['track_id','track_name','track_artist','track_album_id','track_album_name',
            'track_album_release_date','playlist_name','playlist_subgenre','key','mode','playlist_id'],axis=1,inplace=True)
 # data = data[data['playlist_genre'].isin(['rap','edm'])]
@@ -24,5 +24,5 @@ test = pd.DataFrame(Xscl_test,columns="scaled_" + X_train.columns)
 test['label'] = y_test
 
 # Save as CSVs
-train.to_csv("hw6/genre_train.csv",index=False)
-test.to_csv("hw6/genre_test.csv",index=False)
+train.to_csv("data/genre_train.csv",index=False)
+test.to_csv("data/genre_test.csv",index=False)
