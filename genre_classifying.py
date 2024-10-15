@@ -4,8 +4,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 import time
 
-train = pd.read_csv('hw6/genre_train.csv')
-test = pd.read_csv('hw6/genre_test.csv')
+train = pd.read_csv('data/genre_train.csv')
+test = pd.read_csv('data/genre_test.csv')
 
 X_train = train.drop('label',axis=1)
 y_train = train['label']
