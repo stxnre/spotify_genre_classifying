@@ -4,4 +4,8 @@ This repository contains code I wrote for a project in STAT 154 (Modern Statisti
 
 ### The Data
 
-`genre_train.csv` and 
+
+
+`spotify_songs.csv` contains data on 30,000 songs from Spotify, obtained via the `spotifyr` package in R. This dataset was accessed on [Kaggle](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs). 
+
+For every song, 
