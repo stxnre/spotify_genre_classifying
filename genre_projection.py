@@ -26,6 +26,6 @@ tsne_decomp = pd.DataFrame({"P1":Xtsne[:,0],"P2":Xtsne[:,1]})
 tsne_decomp['label'] = y_train
 
 sns.scatterplot(data=tsne_decomp,x="P1",y="P2",s=8,hue="label",palette="bright")
-plt.title("t-SNE on MNIST Training Data",fontsize=14)
+plt.title("t-SNE on Spotify Training Data",fontsize=14)
 plt.tight_layout()
 plt.show()
