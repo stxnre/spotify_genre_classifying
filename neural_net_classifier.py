@@ -9,8 +9,8 @@ import torch.nn as nn
 torch.manual_seed(32)
 
 # Process Data 
-train = pd.read_csv('hw6/genre_train.csv')
-test = pd.read_csv('hw6/genre_test.csv')
+train = pd.read_csv('data/genre_train.csv')
+test = pd.read_csv('data/genre_test.csv')
 genres = np.unique(train['label'])
 map_genres = {genre: i for i, genre in enumerate(genres)}
 train.replace({"label":map_genres},inplace=True)
