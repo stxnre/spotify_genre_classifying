@@ -19,3 +19,10 @@ Before training a classifier, I wanted to look at separability between genres in
 `genre_classifying.py` contains the code that trains and tests genre classifier models, using more "traditional" methods. The methods include a Decision tree, Random forests, and AdaBoost. 
 
 `neural_net_classifier.py`, as the name suggests, trains and tests a neural network genre classifier. Written with PyTorch, This simple neural network has three hidden layers and uses the rectified linear unit (ReLU) for nonlinear activation. The network is trained over 100 epochs with a batch size of 10, working to minimize cross-entropy loss.
+
+### Results
+
+All models trained in this project display their test error. The values are as shown:
+
+|Model        |Test Error    |
+|-------------|--------------|
